@@ -17,10 +17,10 @@ def add_collision_pair(group, a, b):    # a 와 b 사이에 충돌 검사가 필
     if group not in collision_pairs:
         print(f'New group {group} added....')
         collision_pairs[group] = [ [], [] ]
-        if a:
-            collision_pairs[group][0].append(a)
-        if b:
-            collision_pairs[group][1].append(b)
+    if a:
+        collision_pairs[group][0].append(a)
+    if b:
+        collision_pairs[group][1].append(b)
 
 def add_object(o, depth = 0):
     objects[depth].append(o)

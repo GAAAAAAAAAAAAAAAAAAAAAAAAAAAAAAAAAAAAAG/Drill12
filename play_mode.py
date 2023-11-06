@@ -21,6 +21,7 @@ def handle_events():
         else:
             boy.handle_event(event)
 
+
 def init():
     global grass
     global boy
@@ -73,8 +74,10 @@ def draw():
     game_world.render()
     update_canvas()
 
+
 def pause():
     pass
+
 
 def resume():
     pass

@@ -213,6 +213,7 @@ class Boy:
     def get_bb(self):
         return self.x - 20, self.y - 50, self.x + 20, self.y + 50   # 튜플
 
+
     def handle_collision(self, group, other):
         if group == 'boy:ball':     # 아... 볼과 충돌했구나...
             self.ball_count += 1
